@@ -40,7 +40,8 @@ def reduce_to_total(array, starting_point=0)
 end
 
 def reduce_to_all_true(array)
-  array.length.times do |index|
+  i = 0
+  when i < array.length do
     array.any?
   end
   return false
