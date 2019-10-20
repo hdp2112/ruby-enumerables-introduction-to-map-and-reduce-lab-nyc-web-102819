@@ -31,3 +31,10 @@ array.length.times do |index|
   return array2
 end  
 
+def reduce_to_total(array, starting_point=0)
+  total = starting_point
+  array.length.times do |index|
+    total = total + array[index]
+  end
+  return total
+end
