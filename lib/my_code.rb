@@ -53,6 +53,8 @@ def reduce_to_total_two_args(array, starting_point)
   return total
 end
 
+
+
 def reduce_to_all_true(array)
   array = [1, 2, true, "razmatazz"]
   return array.all?
