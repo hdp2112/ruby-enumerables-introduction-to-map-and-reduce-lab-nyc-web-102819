@@ -44,7 +44,6 @@ def reduce_to_all_true(array)
   when i < array.length do
     return false if !array[i]
     i += 1
-  
   end
-  return false
+  return true
 end
