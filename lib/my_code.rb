@@ -2,7 +2,6 @@
 def map_to_negativize(array)
   array = [1, 2, 3, -9]
   array2 = []
-  
   count = 0
   while count < array.length
     array2 << (array[count] * -1)
