@@ -35,7 +35,7 @@ describe 'my own reduce-like methods' do
     end
   end
 
-  describe "reduce_to_total_two_args returns a running total when given a starting point" do
+  describe "reduce_to_total returns a running total when given a starting point" do
     it "reduces correctly" do
       source_array = [1,2,3]
       starting_point = 100
@@ -50,7 +50,7 @@ describe 'my own reduce-like methods' do
     end
   end
 
-  describe "reduce_to_all_true_or_false returns false when any value is false" do
+  describe "reduce_to_all_true returns false when any value is false" do
     it "reduces correctly" do
       source_array = [1, 2, true, "razmatazz", false]
       expect(reduce_to_all_true_or_false(source_array)).to be_falsy
@@ -64,7 +64,7 @@ describe 'my own reduce-like methods' do
     end
   end
 
-  describe "reduce_to_any_true_or_false returns false when no truthy value is present" do
+  describe "reduce_to_any_true returns false when no truthy value is present" do
     it "reduces correctly" do
       source_array = [false, nil, nil, nil]
       expect(reduce_to_any_true_or_false(source_array)).to eq(false)
