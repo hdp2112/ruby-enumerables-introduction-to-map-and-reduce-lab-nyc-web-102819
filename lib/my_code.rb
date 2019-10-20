@@ -42,7 +42,8 @@ end
 def reduce_to_all_true(array)
   i = 0
   when i < array.length do
-    array.any?
+    return false if !array[i]
+    i++
   end
   return false
 end
