@@ -26,10 +26,9 @@ def map_to_double(array)
 end
 
 def map_to_square(array)
-  array = [1, 2, 3, -9]
   array2 = []
-array.length.times do |index|
-    array2 << (array[index] ** 2)
+source_array.length.times do |index|
+    array2 << (source_array[index] ** 2)
   end
   return array2
 end  
