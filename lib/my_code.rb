@@ -34,15 +34,6 @@ array.length.times do |index|
   return array2
 end  
 
-def reduce_to_total(array)
-  source_array = [1,2,3]
-  total = 0
-    source_array.length.times do |index|
-      total = total + source_array[index]
-    end
-  return total
-end
-
 def reduce_to_total(source_array, starting_point=0)
   new = starting_point
   i = 0
@@ -69,24 +60,4 @@ def reduce_to_any_true(source_array)
     i += 1
   end
   return false
-end
-
-def reduce_to_all_true(array)
-  array = [1, 2, true, "razmatazz"]
-  return array.all?
-end
-
-def reduce_to_all_true_or_false(array)
-  array = [1, 2, true, "razmatazz", false]
-  return array.all?
-end
-
-def reduce_to_any_true(array)
-  array = [false, nil, nil, nil, true]
-  return array.any?
-end
-
-def reduce_to_any_true_or_false(array)
-  array = [false, nil, nil, nil]
-  return array.any?
 end
