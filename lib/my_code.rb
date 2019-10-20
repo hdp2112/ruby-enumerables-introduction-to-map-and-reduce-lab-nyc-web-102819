@@ -3,8 +3,8 @@ def map_to_negativize(array)
   array2 = []
   
   count = 0
-  while count < source_array.length
-    array2 << (source_array[count] * -1)
+  while count < array.length
+    array2 << (array[count] * -1)
     count += 1
   end
   return array2
